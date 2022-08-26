@@ -1,0 +1,21 @@
+@use 'variables' as a;
+
+.btn {
+  background: a.$color-btn;
+  border-radius: 1rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: a.$color-bg-card;
+  font-size: a.$fs-sub;
+  font-weight: a.$fw-500;
+  box-shadow: 0px .8rem 2rem a.$color-btn;
+  &:hover {
+    background: a.$color-hover;
+    box-shadow: 0px .6rem 2rem a.$color-hover;
+    transform: translateY(-.2rem);
+  }
+  &:active {
+    box-shadow: 0px 1rem 2rem a.$color-hover;
+    transform: translateY(.2rem);
+  }
+}
